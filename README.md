@@ -1,0 +1,1 @@
+A static website for a business specializing in bed bug extermination.
