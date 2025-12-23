@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Site</title>
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <header class="border-b bg-white">
+    <nav class="mx-auto flex max-w-5xl items-center justify-between p-4">
+      <a class="font-semibold" href="index.html">My Site</a>
+      <div class="flex gap-4 text-sm">
+        <a class="hover:underline" href="page1.html">Page 1</a>
+        <a class="hover:underline" href="page2.html">Page 2</a>
+        <a class="hover:underline" href="page3.html">Page 3</a>
+        <a class="hover:underline" href="page4.html">Page 4</a>
+        <a class="hover:underline" href="page5.html">Page 5</a>
+        <a class="hover:underline" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-5xl p-6">
+    <h1 class="text-3xl font-bold">Home</h1>
+    <p class="mt-2 text-slate-700">
+      Replace this with your content.
+    </p>
+  </main>
+
+  <footer class="mx-auto max-w-5xl p-6 text-sm text-slate-500">
+    © <span id="y"></span> My Site
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
