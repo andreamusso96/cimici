@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="it" class="scroll-smooth">
   <head>
-        <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-489BC013F6"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,12 +12,12 @@
       gtag('config', 'AW-17848334267/9p_gCLrqtNsbELvv375C', {
           'phone_conversion_number': '+39 348 5848481'
       });
-      </script>
+    </script>
     
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FAQ • ZeroCimici</title>
-    <meta name="description" content="FAQ: come funziona il congelamento in reefer, preparazione oggetti, cosa accettiamo e cosa NON facciamo." />
+    <title>FAQ • Perché congelare i mobili invece di buttarli</title>
+    <meta name="description" content="Risposte ai dubbi frequenti: perché lo spray fallisce su materassi e divani, come preparare i mobili per il congelamento e garanzie." />
 
     <script>
       tailwind = window.tailwind || {};
@@ -31,7 +30,10 @@
                 500: "#0ea5e9", 600: "#0284c7", 700: "#0369a1", 800: "#075985", 900: "#0c4a6e"
               }
             },
-            boxShadow: { soft: "0 10px 30px rgba(2, 8, 23, 0.08)" }
+            boxShadow: { 
+                soft: "0 10px 30px rgba(2, 8, 23, 0.08)",
+                up: "0 -4px 6px -1px rgba(0, 0, 0, 0.1)"
+            }
           }
         }
       };
@@ -45,19 +47,29 @@
       body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
       details > summary { list-style: none; }
       details > summary::-webkit-details-marker { display: none; }
+      
+      /* Animation per il pulsante chiamata */
+      .pulse-anim {
+        animation: pulse-blue 2s infinite;
+      }
+      @keyframes pulse-blue {
+        0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.7); }
+        70% { box-shadow: 0 0 0 10px rgba(14, 165, 233, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
+      }
     </style>
   </head>
 
-  <body class="bg-slate-50 text-slate-900 antialiased">
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+  <body class="bg-slate-50 text-slate-900 antialiased pb-24 md:pb-0">
+  
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
       <div class="mx-auto max-w-6xl px-4 py-3">
         <nav class="flex items-center justify-between" aria-label="Navigazione principale">
           <a href="index.html" class="flex items-center gap-2">
-            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white font-bold">FS</span>
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white font-bold">ZC</span>
             <div class="leading-tight">
-              <div class="font-semibold tracking-tight">ZeroCimici</div>
-              <div class="text-xs text-slate-500">Congelamento anti-cimici • Milano</div>
+              <div class="font-bold tracking-tight text-slate-900">ZeroCimici</div>
+              <div class="text-xs text-slate-500 font-medium">Salvataggio Mobili • Milano</div>
             </div>
           </a>
 
@@ -65,13 +77,15 @@
             <a class="px-3 py-2 rounded-lg text-sm font-semibold bg-slate-100 text-slate-900" href="faq.html" aria-current="page">FAQ</a>
             <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100" href="pricing.html">Prezzi</a>
             <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100" href="reviews.html">Recensioni</a>
-            <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100" href="about.html">Chi siamo</a>
             <a class="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100" href="contact.html">Contatti</a>
           </div>
 
-          <div class="hidden md:flex items-center gap-2">
-            <a href="contact.html#prenota" class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-soft hover:bg-brand-700">
-              Prenota ritiro
+          <div class="hidden md:flex items-center gap-4">
+             <div class="text-right hidden lg:block">
+                <div class="font-bold text-slate-900">+39 348 5848481</div>
+            </div>
+            <a href="contact.html#prenota" class="inline-flex items-center justify-center rounded-xl bg-blue-100 px-4 py-2 text-sm font-bold text-slate-900 shadow-soft hover:bg-brand-700 pulse-anim">
+              Parla con un tecnico
             </a>
           </div>
 
@@ -84,11 +98,10 @@
           <a class="block px-3 py-2 rounded-xl text-sm font-medium hover:bg-slate-100" href="faq.html">FAQ</a>
           <a class="block px-3 py-2 rounded-xl text-sm font-medium hover:bg-slate-100" href="pricing.html">Prezzi</a>
           <a class="block px-3 py-2 rounded-xl text-sm font-medium hover:bg-slate-100" href="reviews.html">Recensioni</a>
-          <a class="block px-3 py-2 rounded-xl text-sm font-medium hover:bg-slate-100" href="about.html">Chi siamo</a>
           <a class="block px-3 py-2 rounded-xl text-sm font-medium hover:bg-slate-100" href="contact.html">Contatti</a>
           <div class="p-2">
             <a href="contact.html#prenota" class="w-full inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700">
-              Prenota ritiro
+              Richiedi Analisi
             </a>
           </div>
         </div>
@@ -96,167 +109,156 @@
     </header>
 
     <main>
-      <!-- Hero -->
-      <section class="py-14">
+      <section class="py-14 bg-slate-50">
         <div class="mx-auto max-w-6xl px-4">
-          <div class="max-w-2xl">
-            <h1 class="text-4xl font-semibold tracking-tight">FAQ</h1>
-            <p class="mt-3 text-slate-600">
-              Risposte pratiche: come funziona, come preparare gli oggetti e cosa NON facciamo.
+          <div class="max-w-3xl">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+                Hai dubbi se salvare o buttare? <br>Ecco le risposte.
+            </h1>
+            <p class="mt-4 text-lg text-slate-600">
+              Molti nostri clienti arrivano da disinfestazioni fallite o sono nel panico. Qui spieghiamo perché il freddo è la tua assicurazione sulla bonifica.
             </p>
-          </div>
-
-          <!-- Photo strip -->
-          <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-soft bg-white">
-              <img src="assets/reefer.jpg" class="h-44 w-full object-cover" alt="Container reefer dedicato (foto placeholder)" />
-              <div class="p-4 text-sm text-slate-600">Container refrigerato dedicato (placeholder)</div>
-            </div>
-            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-soft bg-white">
-              <img src="assets/bags.jpg" class="h-44 w-full object-cover" alt="Sacchi, etichette e sigilli (foto placeholder)" />
-              <div class="p-4 text-sm text-slate-600">Sacchi + sigilli + etichette (placeholder)</div>
-            </div>
-            <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-soft bg-white">
-              <img src="assets/team.jpg" class="h-44 w-full object-cover" alt="Team e ritiro a domicilio (foto placeholder)" />
-              <div class="p-4 text-sm text-slate-600">Ritiro e riconsegna (placeholder)</div>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- FAQ accordion -->
       <section class="pb-16">
         <div class="mx-auto max-w-6xl px-4">
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2 space-y-4">
-              <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
+              
+              <div class="flex items-center gap-2 mb-2 mt-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-1 rounded">Efficacia & Sicurezza</span>
+              </div>
+
+              <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-soft" open>
                 <summary class="flex cursor-pointer items-center justify-between gap-4">
-                  <span class="font-semibold">Dove avviene il congelamento?</span>
+                  <span class="font-bold text-lg text-slate-900">Perché non basta lo spray del disinfestatore?</span>
                   <span class="text-slate-400 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
-                <p class="mt-3 text-sm text-slate-600">
-                  In un <span class="font-semibold">container refrigerato dedicato</span> vicino a Milano. Range tipico: <span class="font-semibold">-20°C / -40°C</span>.
-                  Durata ciclo: dipende da volume e densità, ma in generale tra le 72 e 96 ore.
+                <p class="mt-3 text-base text-slate-600 leading-relaxed">
+                  Gli insetticidi e il vapore funzionano bene sulle superfici visibili (muri, battiscopa). <span class="font-semibold text-red-600">Ma falliscono negli spessori.</span> 
+                  Le cimici depongono le uova nel cuore del materasso o nelle fessure profonde del legno dove il veleno non arriva. 
+                  Il nostro congelamento a -40°C penetra ovunque: è impossibile per uova e insetti sopravvivere a quelle temperature.
                 </p>
               </details>
 
               <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
                 <summary class="flex cursor-pointer items-center justify-between gap-4">
-                  <span class="font-semibold">Cosa significa “protocollo sacco barriera”?</span>
+                  <span class="font-bold text-lg text-slate-900">Il disinfestatore ha detto di buttare il materasso/divano. Devo farlo?</span>
                   <span class="text-slate-400 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
-                <div class="mt-3 text-sm text-slate-600 space-y-2">
-                  <p>
-                    È una tecnica di imballo e gestione che aiuta a ridurre condensa e stress sui materiali:
-                  </p>
-                  <ol class="list-decimal ml-5 space-y-1">
-                    <li>Sacco (spesso doppio) + sigillatura</li>
-                    <li>Etichettatura e separazione lotti</li>
-                    <li>Acclimatamento: i sacchi restano chiusi finché tornano a temperatura ambiente</li>
-                  </ol>
-                  <p class="text-slate-500">
-                    Alcuni oggetti sono delicati: se hai dubbi mandaci una foto.
+                <p class="mt-3 text-base text-slate-600 leading-relaxed">
+                  <span class="font-bold">Assolutamente NO.</span> Spesso i disinfestatori consigliano di buttare i mobili perché sanno che i loro spray non penetrano a fondo.
+                  Con il metodo ZeroCimici, puoi salvare mobili di valore o materassi costosi spendendo una frazione del costo di riacquisto. 
+                  Bonifichiamo regolarmente divani, poltrone antiche e letti imbottiti.
+                </p>
+              </details>
+
+              <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
+                <summary class="flex cursor-pointer items-center justify-between gap-4">
+                  <span class="font-bold text-lg text-slate-900">Come garantite il 100% di efficacia?</span>
+                  <span class="text-slate-400 group-open:rotate-180 transition-transform">▾</span>
+                </summary>
+                <p class="mt-3 text-base text-slate-600 leading-relaxed">
+                  Non è magia, è fisica. A -20°C/-40°C le cellule biologiche delle cimici da letto (e delle loro uova) esplodono o congelano irreversibilmente. 
+                  Non esiste "resistenza" al freddo come avviene per i veleni chimici. Se l'oggetto sta nel container per il tempo stabilito, <span class="font-semibold">nulla sopravvive</span>.
+                </p>
+              </details>
+
+              <div class="flex items-center gap-2 mb-2 mt-8">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 bg-brand-50 px-2 py-1 rounded">Preparazione & Logistica</span>
+              </div>
+
+              <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
+                <summary class="flex cursor-pointer items-center justify-between gap-4">
+                  <span class="font-semibold text-lg text-slate-900">Come devo preparare gli oggetti (Mobili vs Sacchi)?</span>
+                  <span class="text-slate-400 group-open:rotate-180 transition-transform">▾</span>
+                </summary>
+                <div class="mt-3 text-sm text-slate-600 space-y-4">
+                  <p class="font-medium">Segui queste semplici regole per garantire il risultato:</p>
+                  
+                  <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                      <h4 class="font-bold text-slate-900 mb-2">📦 Vestiti, Biancheria, Oggetti piccoli</h4>
+                      <ul class="list-disc ml-4 space-y-1">
+                        <li>Metti tutto in <strong>sacchi resistenti</strong> (tipo condominio/neri grandi).</li>
+                        <li>Non riempirli fino a scoppiare: lascia spazio per chiuderli bene.</li>
+                        <li>Chiudi con nastro adesivo (noi applicheremo poi i nostri sigilli di sicurezza).</li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-brand-50 p-4 rounded-xl border border-brand-100">
+                    <h4 class="font-bold text-brand-900 mb-2">🛋️ Mobili Grandi (Letti, Armadi, Divani)</h4>
+                    <ul class="list-disc ml-4 space-y-1 text-brand-900">
+                      <li><strong>Smonta</strong> il mobile nelle sue parti principali se troppo ingombrante.</li>
+                      <li><strong>Fascialo</strong> con materiale da trasloco (celofan o pluriball) per proteggerlo durante il trasporto.</li>
+                      <li>Al resto pensiamo noi: applicheremo una pellicola protettiva tecnica aggiuntiva prima del congelamento.</li>
+                    </ul>
+                  </div>
+                  
+                  <p class="text-xs text-slate-500">
+                    *Dubbi su come imballare un oggetto specifico? Mandaci una foto su WhatsApp.
                   </p>
                 </div>
               </details>
 
               <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
                 <summary class="flex cursor-pointer items-center justify-between gap-4">
-                  <span class="font-semibold">Come preparo gli oggetti?</span>
-                  <span class="text-slate-400 group-open:rotate-180 transition-transform">▾</span>
-                </summary>
-                <div class="mt-3 text-sm text-slate-600 space-y-2">
-                    In caso di sacchi e oggetti piccoli: <br>
-                  <ul class="space-y-2">
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">1.</span> Metti gli oggetti in sacchi resistenti (60L consigliato).</li>
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">2.</span> Chiudi con nastro (noi applichiamo sigilli e etichette).</li>
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">3.</span> Evita oggetti con liquidi o spray.</li>
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">4.</span> Se non sai come fare: mandaci una foto, ti guidiamo.</li>
-                  </ul>
-                  <br>
-                  Per mobili e oggetti più grandi/pesanti: <br>
-                  <ul class="space-y-2">
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">1.</span> Smonta il mobile.</li>
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">2.</span> Fascialo con materiale da trasloco (celofan, etc.).</li>
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">3.</span> Noi applichiamo un pellicola protettivo su tutta la superficie, congeliamo e lo riconsegniamo.</li>
-                  </ul>
-                </div>
-              </details>
-
-              <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
-                <summary class="flex cursor-pointer items-center justify-between gap-4">
-                  <span class="font-semibold">Quando posso aprire i sacchi dopo la consegna?</span>
+                  <span class="font-semibold text-slate-900">Dove avviene il congelamento?</span>
                   <span class="text-slate-400 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
                 <p class="mt-3 text-sm text-slate-600">
-                  Ti riconsegniamo i sacchi una volta che sono tornati a temperatura ambiente. Quindi li puoi aprire subito.
+                  In un <span class="font-semibold">container refrigerato dedicato (Reefer)</span> vicino a Milano. 
+                  Durata ciclo: in genere 72-96 ore, variabile in base alla densità del carico per garantire che il freddo raggiunga il cuore di ogni oggetto.
                 </p>
               </details>
 
               <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
                 <summary class="flex cursor-pointer items-center justify-between gap-4">
-                  <span class="font-semibold">Questo servizio elimina le cimici “in casa”?</span>
+                  <span class="font-semibold text-slate-900">Posso usare subito gli oggetti alla riconsegna?</span>
                   <span class="text-slate-400 group-open:rotate-180 transition-transform">▾</span>
                 </summary>
                 <p class="mt-3 text-sm text-slate-600">
-                  No. Questo servizio è per <span class="font-semibold">oggetti</span>. Se l’ambiente è infestato, gli oggetti bonificati possono reinfestarsi.
-                  Se sospetti cimici in casa, contattaci: valutiamo insieme la strategia (servizio separato).
+                  Sì. Ti riconsegniamo i sacchi/mobili una volta che sono tornati a temperatura ambiente (fase di acclimatamento gestita da noi). 
+                  Non ci sono veleni o residui chimici, quindi puoi dormirci sopra la sera stessa.
                 </p>
               </details>
 
-              <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-soft">
-                <h2 class="text-xl font-semibold">Cosa NON facciamo</h2>
-                <p class="mt-2 text-sm text-slate-600">
-                  La chiarezza è parte del servizio.
-                </p>
-                <div class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-700">
-                  <ul class="space-y-2">
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">•</span> Non facciamo trattamenti in appartamento (spray, vapore, azoto in loco).</li>
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">•</span> Non accettiamo oggetti bagnati, con muffa o con liquidi.</li>
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">•</span> Non ritiriamo contenitori pressurizzati (spray).</li>
+              <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-soft mt-8">
+                <h2 class="text-xl font-bold text-slate-900">Cosa NON facciamo (Importante)</h2>
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-700">
+                  <ul class="space-y-3">
+                    <li class="flex gap-2"><span class="text-red-500 font-bold">✕</span> Non disinfestiamo i muri di casa (servizio solo oggetti).</li>
+                    <li class="flex gap-2"><span class="text-red-500 font-bold">✕</span> Non accettiamo oggetti bagnati o con muffa.</li>
                   </ul>
-                  <ul class="space-y-2">
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">•</span> Elettronica/batterie: spesso NO (valutazione).</li>
-                    <li class="flex gap-2"><span class="text-brand-700 font-bold">•</span> Oggetti molto delicati/di valore: solo con accordi specifici.</li>
+                  <ul class="space-y-3">
+                    <li class="flex gap-2"><span class="text-red-500 font-bold">✕</span> Non ritiriamo bombolette spray o liquidi infiammabili.</li>
+                    <li class="flex gap-2"><span class="text-red-500 font-bold">✕</span> Elettronica delicata: solo previa valutazione.</li>
                   </ul>
-                </div>
-
-                <div class="mt-6 rounded-2xl bg-brand-50 p-5 border border-brand-100">
-                  <div class="font-semibold text-brand-900">Dubbi su un oggetto?</div>
-                  <p class="mt-2 text-sm text-brand-900/80">
-                    Inviaci una foto + due righe: ti rispondiamo con un sì/no e la modalità consigliata.
-                  </p>
-                  <a href="contact.html#prenota" class="mt-4 inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700">
-                    Contattaci
-                  </a>
                 </div>
               </div>
+
             </div>
 
-            <!-- Side panel -->
             <aside class="space-y-4">
-              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
-                <div class="font-semibold">Pronto a prenotare?</div>
-                <p class="mt-2 text-sm text-slate-600">
-                  Se conosci già quantità e zona, puoi prenotare in 1 minuto.
+              <div class="rounded-3xl border border-slate-200 bg-slate-900 text-white p-6 shadow-soft">
+                <div class="font-bold text-lg">Hai fretta?</div>
+                <p class="mt-2 text-sm text-slate-300">
+                  Se hai già i sacchi pronti o vuoi un preventivo veloce per il divano.
                 </p>
-                <a href="contact.html#prenota" class="mt-4 w-full inline-flex items-center justify-center rounded-xl bg-blue-200 px-4 py-2 text-sm font-semibold text-black hover:bg-brand-700">
-                  Prenota ritiro
+                <a href="tel:+393485848481" class="mt-4 w-full inline-flex items-center justify-center rounded-xl bg-blue-300 px-4 py-3 text-sm font-bold text-white hover:bg-brand-400 transition">
+                  📞 Chiama ora
+                </a>
+                 <a href="https://wa.me/393485848481" class="mt-2 w-full inline-flex items-center justify-center rounded-xl bg-[#25D366] px-4 py-3 text-sm font-bold text-white hover:opacity-90 transition">
+                  Scrivici su WhatsApp
                 </a>
               </div>
 
               <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft">
-                <div class="font-semibold">Contatti rapidi</div>
-                <div class="mt-3 space-y-2 text-sm text-slate-700">
-                  <div class="flex items-center gap-1">
-                    <span class="font-semibold">Tel:</span>
-                    <a href="tel:+393485848481" class="text-slate-700 hover:text-brand-600">+39 348 5848481</a>
-                  </div>
-                  <div class="flex items-center gap-1">
-                    <span class="font-semibold">Email:</span>
-                    <a href="mailto:cimicidaletto@gmail.com" class="text-slate-700 hover:text-brand-600">cimicidaletto@gmail.com</a>
-                  </div>
-                </div>
+                <div class="font-semibold text-slate-900">Dubbi su un oggetto?</div>
+                <p class="mt-2 text-sm text-slate-600">
+                    Mandaci una foto. Ti diciamo subito se è congelabile in sicurezza.
+                </p>
               </div>
             </aside>
           </div>
@@ -264,11 +266,10 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-200">
       <div class="mx-auto max-w-6xl px-4 py-10">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm text-slate-400">
-          <p>© <span id="year"></span> ZeroCimici</p>
+          <p>© <span id="year"></span> ZeroCimici - Il freddo che salva i mobili.</p>
         </div>
       </div>
     </footer>
